@@ -1,0 +1,20 @@
+# Local Supabase configuration (CLI optional — `supabase db push`).
+project_id = "game-arcade"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "realtime"]
+
+[db]
+port = 54322
+major_version = 15
+
+[auth]
+enable_signup = true
+
+[auth.anonymous]
+enabled = true
+
+[realtime]
+enabled = true
